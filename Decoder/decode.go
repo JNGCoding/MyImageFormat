@@ -31,6 +31,7 @@ func read_width_height(file *os.File) (uint32, uint32) {
 func get_line_object_data(file *os.File) []byte {
 	result := make([]byte, 5)
 	file.Read(result)
+
 	return result
 }
 
